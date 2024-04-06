@@ -105,3 +105,35 @@ print("{0:^10}".format("hi")) # '    hi    '
 print("{0:=^10}".format("hi")) # '====hi===='
 print("{0:!<10}".format("hi")) # 'hi!!!!!!!!'
 
+y = 3.42134234
+print('{0:0.4f}'.format(y))
+print('{0:10.4f}'.format(y))
+
+print('{{ and }}'.format())
+
+name = '홍길동'
+age = 30
+print(f'나의 이름은 {name} 입니다. 나이는 {age} 입니다.')
+print(f'나는 내년이면 {age + 1} 살이 된다.')
+
+d = {'name' : '홍길동', 'age' : '30'}
+print(f'나의 이름은 {d['name']} 입니다. 나이는 {d['age']} 입니다.')
+
+print(f'{'hi':<10}')
+print(f'{'hi':>10}')
+print(f'{'hi':^10}')
+
+print(f'{'hi'::=^10}')
+print(f'{'hi'::!^10}')
+
+y = 3.42134234
+print(f'{y:0.4f}')
+print(f'{y:10.4f}')
+
+a = 'hobby'
+print(a.count('b'))
+
+a = 'Python is the best choice'
+print(a.find('b'))
+print(a.find('k'))
+
